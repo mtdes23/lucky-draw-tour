@@ -59,8 +59,8 @@ function drawWheel(){
   ctx.save();ctx.rotate(mid);ctx.textAlign='center';ctx.textBaseline='middle';
   ctx.fillStyle='#890620';
   const fontSize=n>75?10:n>55?12:n>40?14:n>29?16:n>19?19:n>11?23:27;
-  ctx.font=`${isPlaceholder?900:800} ${isPlaceholder?58:fontSize}px Arial, sans-serif`;
-  const name=String(items[i].name||'');
+  ctx.font=`${isPlaceholder?900:700} ${isPlaceholder?58:fontSize}px "Segoe UI", Arial, sans-serif`;
+  const name=String(items[i].name||'').normalize('NFC');
   const maxTextWidth=330;
   ctx.fillText(name,320,0,maxTextWidth);
   ctx.restore();
