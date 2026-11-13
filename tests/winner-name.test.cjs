@@ -5,6 +5,6 @@ for (const file of ['index.html', 'BZT_ROCKY_Lucky_Draw_2026.html']) {
   assert.match(html, /\.win-name\{[^}]*white-space:nowrap/);
   assert.match(html, /function fitWinnerName\(\)/);
   assert.match(html, /addEventListener\('resize',fitWinnerName\)/);
-  assert.match(html, /classList\.add\('show'\);fitWinnerName\(\)/);
+  assert.match(html, /classList\.add\('show'\);launchFireworks\(\);playCelebration\(\);fitWinnerName\(\)/);
 }
 console.log('Winner name checks passed');
