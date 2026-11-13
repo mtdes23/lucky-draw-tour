@@ -5,6 +5,7 @@ for (const file of ['index.html', 'BZT_ROCKY_Lucky_Draw_2026.html']) {
   assert.match(html, /<div class="hub"[^>]*><\/div>/);
   assert.match(html, /querySelectorAll\('\.brands img'\).*cloneNode\(true\)/);
   assert.match(html, /\.hub img\{/);
+  assert.match(html, /\.hub img\{[^}]*translateY\(/);
   assert.match(html, /\.hub img:first-child\{filter:/);
   assert.match(html, /\.hub img:last-child\{filter:/);
   assert.ok(html.includes('<p>31 khách • 29 giải thưởng</p>'));
